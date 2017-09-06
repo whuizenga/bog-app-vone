@@ -9,6 +9,16 @@
   </head>
 
   <body>
+    <div class="navbar">
+      <div>
+        <h1> Bog-app </h1>
+      </div>
+      <div>
+        <%= link_to "new creature", new_creature_path %>
+      </div>
+    </div>
+
+
     <%= yield %>
   </body>
 </html>

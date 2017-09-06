@@ -1,0 +1,41 @@
+@import 'bootswatch/cosmo/variables';
+@import 'bootstrap';
+@import 'bootswatch/cosmo/bootswatch';
+
+.navbar {
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 2px 15px black;
+}
+
+.creatures-container {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    :hover {
+        text-decoration: none; 
+        color: red;
+    }
+}
+
+.creature-display {
+    width: 25vw;
+    height: 15vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px black;
+    margin: 15px;
+    h3{
+        margin: 5px;
+    }
+    p {
+        margin: 5px;
+    }
+}

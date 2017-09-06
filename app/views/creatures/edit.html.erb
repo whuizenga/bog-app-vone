@@ -1,0 +1,12 @@
+<h1>Edit a critter</h1>
+
+<%= form_for( @creature , remote: true) do |f| %>
+    <%= f.label :name%>
+    <%= f.text_field :name %>
+
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+
+    <%= f.submit "update" %>
+    <% end %>
+    <%= button_to "Delete", @creature, method: :delete %>

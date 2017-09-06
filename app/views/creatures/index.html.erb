@@ -1,0 +1,12 @@
+<h1>List all the creatures</h1>
+
+<div class="creatures-container">
+<% @creatures.each do |creature|%>
+    <%= link_to creature_path creature.id do %>
+    <div class="creature-display">
+        <h3><%= creature.name %></h3>
+        <p><%= creature.description %></p>  
+    </div>
+    <% end %>
+<% end %>
+</div>
